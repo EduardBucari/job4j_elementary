@@ -11,6 +11,7 @@ public class Converter {
     }
 
     public static void main(String[] args) {
+
           int in = 140;
           int expected = 2;
           int out = Converter.rubleToEuro(in);
