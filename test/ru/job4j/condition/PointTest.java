@@ -40,3 +40,5 @@ public class PointTest {
         Assert.assertEquals(expected3, out3, 0.01);
     }
 }
+// спасибо за задание,
+// надеюсь я все правильно понял.
