@@ -13,3 +13,4 @@ public class Cinema {
         permission(true, true);
     }
 }
+// Задание понравилось, спасибо.
