@@ -3,7 +3,7 @@ package ru.job4j.condition;
 public class Max {
     public static int max(int left, int right) {
         int result = left;
-        result = result > 1 ? left : right;
+        result = result > right ? left : right;
         return result;
     }
 
