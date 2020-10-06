@@ -22,14 +22,14 @@ public class MultiMaxTest {
 
     @Test
     public void whenThirdMax() {
-        int result = MultiMax.max(1, 4, 7);
-        assertThat(result, is(7));
+        int result3 = MultiMax.max(1, 4, 7);
+        assertThat(result3, is(7));
     }
 
     @Test
     public void whenAllEquals() {
-        int result = MultiMax.max(2, 2, 2);
-        assertThat(result, is(2));
+        int result4 = MultiMax.max(2, 2, 2);
+        assertThat(result4, is(2));
     }
 }
 
