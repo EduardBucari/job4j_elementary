@@ -6,6 +6,4 @@ public class Loop {
             System.out.println("Thanks");    // sout + tab
         }
     }
-
-
 }
