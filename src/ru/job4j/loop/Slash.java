@@ -2,11 +2,11 @@ package ru.job4j.loop;
 
 public class Slash {
     public static void draw(int size) {
-        for (int row = 0; row <= size; row++) {
-            for (int cell = 0; cell <= size; cell++) {
+        for (int row = 0; row < size; row++) {
+            for (int cell = 0; cell < size; cell++) {
                 boolean left = row == cell;
 
-                boolean right = row + cell == size;
+                boolean right = size - row - 1 == cell;
                 if (left) {
                     System.out.print("0");
                 } else if (right) {
@@ -25,6 +25,8 @@ public class Slash {
         draw(3);
         System.out.println("Draw by 5");
         draw(5);
+        System.out.println("Draw by 9");
+        draw(9);
     }
 }
 //
