@@ -5,8 +5,8 @@ public class Slash {
         for (int row = 0; row < size; row++) {
             for (int cell = 0; cell < size; cell++) {
                 boolean left = row == cell;
-
-                boolean right = size - row - 1 == cell;
+                boolean right = row + cell == size - 1;
+                //boolean right = size - row - 1 == cell;
                 if (left) {
                     System.out.print("0");
                 } else if (right) {
