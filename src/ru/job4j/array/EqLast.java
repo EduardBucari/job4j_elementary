@@ -7,4 +7,4 @@ public class EqLast {
             return lastNum1 == lastNum2;
         }
     }
-
+//
