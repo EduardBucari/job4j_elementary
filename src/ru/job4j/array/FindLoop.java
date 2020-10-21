@@ -15,7 +15,10 @@ public class FindLoop {
     public static int indexOf(int[] data, int el, int start, int finish) {
         int rst = -1; /* если элемента нет в массиве, то возвращаем -1. */
         for (int j = 0; j < data.length; j++) {
-           // if (data[j] == )
+            if (el >= start && el <= finish) {
+                rst = j;
+                break;
+            }
         }
         return rst;
     }
