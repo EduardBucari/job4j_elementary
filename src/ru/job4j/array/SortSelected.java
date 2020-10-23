@@ -7,8 +7,8 @@ public class SortSelected {
             int index = FindLoop.indexOf(data, min, i, data.length);
             // swap()
             int temp = data[i];
-            data[i] = data[j];
-            data[j] = temp;
+          //  data[i] = data[j];
+          //  data[j] = temp;
         }
         return data;
     }
