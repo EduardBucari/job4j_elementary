@@ -12,7 +12,7 @@ public class MatrixCheckTest {
         char[][] input = {
                 {' ', ' ', ' '},
                 {'x', 'x', 'x'},
-                {' ', ' ', ' '}
+                {' ', ' ', ' '},
         };
         boolean result = MatrixCheck.monoHorizontal(input, 1);
         assertThat(result, is(true));
@@ -27,5 +27,17 @@ public class MatrixCheckTest {
         };
         boolean result = MatrixCheck.monoVertical(input, 2);
         assertThat(result, is(true));
+    }
+
+    @Test
+    public void whenDiagonal() {
+        char[][] input = {
+                {'x', ' ', ' '},
+                {' ', 'x', ' '},
+                {' ', ' ', 'x'}
+        };
+        char[] result = MatrixCheck.extractDiagonal(input);
+        char[] expect = {'x', 'x', 'x'};
+        assertThat(result, is(expect));
     }
 }
