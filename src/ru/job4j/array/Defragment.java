@@ -5,9 +5,14 @@ public class Defragment {
         for (int index = 0; index < array.length; index++) {
             if (array[index] == null) {
                 int point = index;
-                for (int j = index; (String[j] == null) && (j < String.length); j++){
+                for (int j = 0; j < array.length; j++){
+                    if (array[j] != null) {
+
+                        array[j] = array[index];
+
+                    }
                     point++;
-                }
+               }
             }
             System.out.print(array[index] + " ");
         }
