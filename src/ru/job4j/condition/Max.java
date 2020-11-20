@@ -8,14 +8,14 @@ public class Max {
     public static int max3(int first, int second, int third) {
         int temp =  first > second ? first : second;
         int max = temp > third ? temp : third;
-        return max;
+        return max(max(first, second), third);
     }
 
     public static int max4(int first, int second, int third, int fourth) {
         int temp = first > second ? first : second;
         int temp2 = third > fourth ? third : fourth;
         int max = temp > temp2 ? temp : temp2;
-        return max;
+        return max(max(first, second), max(third, fourth));
     }
 
     public static void main(String[] args) {
